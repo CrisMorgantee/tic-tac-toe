@@ -1,0 +1,24 @@
+{
+  "name": "jogo-da-velha-uc9",
+  "version": "1.0.0",
+  "description": "Jogo da Velha Interativo desenvolvido para UC9 - Lógica de Programação",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "jogo-da-velha",
+    "tic-tac-toe",
+    "uc9",
+    "logica-programacao",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Estudante UC9",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
