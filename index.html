@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo da Velha Interativo</title>
+  <meta name="description" content="Jogo da velha (Tic-Tac-Toe) interativo e responsivo com HTML, CSS e JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="title">Jogo da Velha</h1>
+    <div class="controls">
+      <button id="theme-toggle" class="btn" aria-pressed="false" aria-label="Alternar tema claro/escuro" title="Alternar tema (L)" data-shortcut="L">
+        <span class="icon" aria-hidden="true">🌓</span>
+        <span class="btn-text">Tema</span>
+      </button>
+      <button id="reset" class="btn" aria-label="Reiniciar partida (R)" title="Reiniciar (R)" data-shortcut="R">
+        <span class="icon" aria-hidden="true">🔄</span>
+        <span class="btn-text">Reiniciar</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <section class="status-panel" aria-live="polite" aria-atomic="true">
+      <p id="status" class="status" role="status">Vez do jogador: X</p>
+      <div class="scoreboard" aria-label="Placar">
+        <div class="score">
+          <span class="label">X</span>
+          <span id="score-x" class="value">0</span>
+        </div>
+        <div class="score">
+          <span class="label">O</span>
+          <span id="score-o" class="value">0</span>
+        </div>
+        <div class="score">
+          <span class="label">Empates</span>
+          <span id="score-draw" class="value">0</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="board-wrapper">
+      <div id="board" class="board" role="grid" aria-label="Tabuleiro do jogo da velha" aria-describedby="status">
+        <!-- 9 células -->
+        <button class="cell" data-index="0" role="gridcell" aria-label="célula 1" aria-live="off"></button>
+        <button class="cell" data-index="1" role="gridcell" aria-label="célula 2" aria-live="off"></button>
+        <button class="cell" data-index="2" role="gridcell" aria-label="célula 3" aria-live="off"></button>
+        <button class="cell" data-index="3" role="gridcell" aria-label="célula 4" aria-live="off"></button>
+        <button class="cell" data-index="4" role="gridcell" aria-label="célula 5" aria-live="off"></button>
+        <button class="cell" data-index="5" role="gridcell" aria-label="célula 6" aria-live="off"></button>
+        <button class="cell" data-index="6" role="gridcell" aria-label="célula 7" aria-live="off"></button>
+        <button class="cell" data-index="7" role="gridcell" aria-label="célula 8" aria-live="off"></button>
+        <button class="cell" data-index="8" role="gridcell" aria-label="célula 9" aria-live="off"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>UC9 • Jogo da Velha • Acessível, Responsivo e Moderno</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
